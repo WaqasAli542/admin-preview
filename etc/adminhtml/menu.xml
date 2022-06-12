@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="WMZ_AdminPreview::menu"
+             title="Admin Preview"
+             module="WMZ_AdminPreview"
+             sortOrder="10"
+             parent="WMZ_Core::wmz"
+             resource="WMZ_AdminPreview::menu"/>
+        <add id="WMZ_AdminPreview::configuration"
+             title="Configuration"
+             module="WMZ_AdminPreview"
+             sortOrder="20"
+             action="adminhtml/system_config/edit/section/admin_preview"
+             resource="WMZ_AdminPreview::config"
+             parent="WMZ_AdminPreview::menu"
+        />
+    </menu>
+</config>
